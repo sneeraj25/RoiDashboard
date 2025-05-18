@@ -1,0 +1,129 @@
+@media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  .breadFlex {
+    flex-direction: column;
+  }
+  .searchHeadFlex {
+    flex-direction: column;
+  }
+
+  .searchBox,
+  .userInfo,
+  .logo span {
+    display: block;
+  }
+  .main .sideWrapper {
+    width: 33% !important;
+    height: 100vh !important;
+    position: fixed;
+    top: 0px;
+    left: -400px;
+    opacity: 0;
+    z-index: 11;
+  }
+  .main .sideWrapper .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .main .content {
+    width: 100%;
+    flex: 0 0 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sideWrapper.open {
+    left: 0px !important;
+    opacity: 1 !important;
+  }
+
+  body.dark .main .sideWrapper .sidebar {
+    background: linear-gradient(
+      110.34deg,
+      rgb(31 31 31) 0%,
+      rgb(37 37 37) 100%
+    );
+  }
+
+  .sidebarOverlay {
+    width: 100%;
+    height: 100%;
+    background: #00000029;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebarOverlay.show {
+    display: block !important;
+    transition: all 0.3s ease-in-out;
+  }
+
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .breadFlex {
+    flex-direction: column;
+  }
+  .searchHeadFlex {
+    flex-direction: column;
+  }
+
+  .searchBox,
+  .userInfo,
+  .logo span {
+    display: none;
+  }
+  .main .sideWrapper {
+    width: 75% !important;
+    height: 100vh !important;
+    position: fixed;
+    top: 0px;
+    left: -400px;
+    opacity: 0;
+    z-index: 11;
+  }
+  .main .sideWrapper .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .main .content {
+    width: 100%;
+    flex: 0 0 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sideWrapper.open {
+    left: 0px !important;
+    opacity: 1 !important;
+  }
+
+  body.dark .main .sideWrapper .sidebar {
+    background: linear-gradient(
+      110.34deg,
+      rgb(31 31 31) 0%,
+      rgb(37 37 37) 100%
+    );
+  }
+
+  .sidebarOverlay {
+    width: 100%;
+    height: 100%;
+    background: #00000029;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebarOverlay.show {
+    display: block !important;
+    transition: all 0.3s ease-in-out;
+  }
+  .css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+    left: 310px !important;
+  }
+}
